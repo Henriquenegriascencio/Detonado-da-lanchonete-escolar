@@ -1,0 +1,55 @@
+                                                                                            /* Estilização geral */
+body {                                                                                    /*Linha 2: body { Seleciona o elemento <body> para aplicar estilos globais.*/
+    margin: 0;                                                                             /*Linha 3: margin: 0; Remove margem externa padrão do navegador.*/
+    padding: 0;                                                                             /*Linha 4: padding: 0; Remove preenchimento interno padrão.*/
+    font-family: Arial, sans-serif;                                                          /*Linha 5: font-family: Arial, sans-serif; Define a família de fontes padrão.*/
+    background-color: #f5f5dc;                                                            /*Linha 6: background-color: #f5f5dc; Aplica cor de fundo bege claro à página.*/
+    color: #333;                                                                      /*Linha 7: color: #333; Usa texto em tom de cinza-escuro para melhor legibilidade.*/
+  }                                                                                     /*Linha 8: } Fecha o bloco de regras do body.*/
+  
+                                                                                            /* Cabeçalho */
+  header {                                                                                   /*Linha 11: header { Seleciona o <header>.*/
+    background-color: #8b4513;                                                             /*Linha 12: background-color: #8b4513; Fundo marrom para destacar o topo.*/
+    color: #fff;                                                                          /*Linha 13: color: #fff; Texto branco dentro do cabeçalho.*/
+    padding: 20px 0;                                                                          /*Linha 14: padding: 20px 0; Espaçamento interno acima e abaixo.*/
+    text-align: center;                                                                 /*Linha 15: text-align: center; Centraliza o conteúdo do cabeçalho.*/
+  }                                                                                           /*Linha 16: } Fecha o bloco do header.*/
+  
+                                                                                                /* Navegação */
+  nav ul {                                                                                      /*Linha 19: nav ul { Seleciona a lista não ordenada dentro de <nav>.*/
+    list-style: none;                                                                           /*Linha 20: list-style: none; Remove marcadores padrão de lista.*/
+    margin: 0;                                                                                  /*Linha 21: margin: 0; Zera margem da lista.*/
+    padding: 0;                                                                                /*Linha 22: padding: 0; Zera espaçamento interno.*/
+    display: flex;                                                                             /*Linha 23: display: flex; Usa flexbox para alinhar itens horizontalmente.*/
+    justify-content: center;                                                                    /*Linha 24: justify-content: center; Centraliza horizontalmente os itens do menu.*/
+  }                                                                                             /*Linha 25: } Fecha o bloco nav ul.*/
+  
+  nav li {                                                                                       /*Linha 27: nav li { Seleciona cada item de lista dentro de <nav>.*/
+    margin: 0 15px;                                                                              /*Linha 28: margin: 0 15px; Espaço horizontal entre cada item.*/
+  }                                                                                              /*Linha 29: } Fecha o bloco nav li.*/
+  
+  nav a {                                                                                      /*Linha 31: nav a { Seleciona os links dentro da navegação.*/
+    color: #fff;                                                                               /*Linha 32: color: #fff; Deixa o texto dos links branco.*/
+    text-decoration: none;                                                                      /*Linha 33: text-decoration: none; Remove o sublinhado padrão.*/
+    font-weight: bold;                                                                         /*Linha 34: font-weight: bold; Deixa o texto em negrito.*/
+  }                                                                                              /*Linha 35: } Fecha o bloco nav a.*/
+  
+                                                                                              /* Seção Destaque */
+  .destaque {                                                                                   /*Linha 38: .destaque { Seleciona qualquer elemento com a classe destaque. */
+    background-color: #ffe4b5;                                                                /*Linha 39: background-color: #ffe4b5; Aplica fundo pêssego suave.*/
+    padding: 20px;                                                                              /*Linha 40: padding: 20px; Espaçamento interno uniforme.*/
+    text-align: center;                                                                       /*Linha 41: text-align: center; Centraliza o conteúdo.*/
+    margin: 20px;                                                                              /*Linha 42: margin: 20px; Espaço externo em volta da seção.  */
+    border-radius: 8px;                                                                        /*Linha 43: border-radius: 8px; Arredonda levemente os cantos.*/
+  }                                                                                             /*Linha 44: } Fecha o bloco .destaque.*/
+  
+                                                                                                 /* Rodapé */
+  footer {                                                                                    /*Linha 47: footer { Seleciona o <footer>.*/
+    background-color: #8b4513;                                                               /*Linha 48: background-color: #8b4513; Mesma cor marrom do cabeçalho.*/
+    color: #fff;                                                                            /*Linha 49: color: #fff; Texto branco no rodapé.*/
+    text-align: center;                                                                         /*Linha 50: text-align: center; Centraliza o texto.*/
+    padding: 10px 0;                                                                            /*Linha 51: padding: 10px 0; Espaço interno acima e abaixo. */
+    position: fixed;                                                                             /*Linha 52: position: fixed; Mantém o rodapé fixo na parte inferior da janela.  */
+    width: 100%;                                                                                 /*Linha 53: width: 100%; Faz o rodapé ter a largura total da tela.*/
+    bottom: 0;                                                                                  /*Linha 54: bottom: 0; Posiciona o rodapé exatamente na base da página.*/
+  }                                                                                              /*Linha 55: } Fecha o bloco footer.*/
