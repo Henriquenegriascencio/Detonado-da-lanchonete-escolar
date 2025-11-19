@@ -1,31 +1,138 @@
-<!DOCTYPE html>                                                                             <!--Linha 1: <!DOCTYPE html> Declara que o documento está usando HTML5. -->
-<html lang="pt-BR">                                                                           <!--Linha 2: <html lang="pt-BR"> Abre o elemento raiz e define o idioma como português do Brasil. -->
-<head>                                                                                 <!--Linha 3: <head> Início da seção de metadados (título, links, codificação). -->
-  <meta charset="UTF-8">                                                                 <!--Linha 4: <meta charset="UTF-8"> Define a codificação de caracteres como UTF-8, suportando acentuação.   -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">                 <!--Linha 5: <meta name="viewport" content="width=device-width, initial-scale=1.0"> Configura a viewport para tornar a página responsiva em celulares e tablets.-->
-  <title>Lanchonete Escolar</title>                                                       <!--Linha 6: <title>Lanchonete Escolar</title> Texto exibido na aba do navegador. -->
-  <link rel="stylesheet" href="styles.css">                                               <!--Linha 7: <link rel="stylesheet" href="styles.css"> Vincula o arquivo de estilos CSS externo chamado styles.css. -->
-</head>                                                                             <!--Linha 8: </head> Fecha a seção de metadados. -->
-<body>                                                                                     <!--Linha 9: <body> Início do conteúdo visível na página. -->
-  <header>                                                                                  <!--Linha 10: <header> Elemento semântico que agrupa o cabeçalho (logo, título, navegação). -->
-    <h1>Lanchonete Escolar</h1>                                                          <!--Linha 11: <h1>Lanchonete Escolar</h1> Título principal da página, em fonte grande. -->
-    <nav>                                                                                 <!--Linha 12: <nav> Elemento semântico para a área de navegação.-->
-      <ul>                                                                                <!--Linha 13: <ul> Inicia uma lista não ordenada para os itens do menu. -->
-        <li><a href="#">Home</a></li>                                                     <!--Linha 14: <li><a href="#">Home</a></li> Primeiro item do menu, link para seção “Home”. -->
-        <li><a href="#">Cardápio</a></li>                                            <!--Linha 15: <li><a href="#">Cardápio</a></li> Link para a seção de “Cardápio”. -->
-        <li><a href="#">Sobre</a></li>                                                  <!--Linha 16: <li><a href="#">Sobre</a></li> Link para “Sobre” a lanchonete. -->
-        <li><a href="#">Contato</a></li>                                                  <!--Linha 17: <li><a href="#">Contato</a></li> Link para a página de “Contato”. -->
-      </ul>                                                                             <!--Linha 18: </ul> Fecha a lista de navegação. -->
-    </nav>                                                                            <!--Linha 19: </nav> Fecha o elemento de navegação.-->
-  </header>                                                                      <!--Linha 20: </header> Fecha o cabeçalho. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete Escolar</title>
+  <style>
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8e7;
+      color: #333;
+    }
+    header {
+      background-color: #ffcc00;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #d62828;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d62828;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero h2 {
+      font-size: 3em;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    .cardapio {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .item {
+      background-color: #ffe066;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      width: 200px;
+      transition: transform 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+      background-color: #ffd23f;
+    }
+    .promo {
+      background-color: #d62828;
+      color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍔 Lanchonete Escolar</h1>
+    <nav>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#promo">Promoções</a>
+      <a href="#contato">Contato</a>
+      <a href="#sobre">Sobre Nós</a>
+    </nav>
+  </header>
 
-  <section class="destaque">                                                      <!--Linha 22: <section class="destaque"> Inicia uma seção destacada, com classe “destaque” para estilização especial. -->
-    <h2>Destaque do Dia</h2>                                                        <!--Linha 23: <h2>Destaque do Dia</h2> Subtítulo para chamar atenção ao menu do dia. -->
-    <p>Sanduíche de frango, suco natural e cookie de chocolate.</p>                   <!--Linha 24: <p>Sanduíche de frango, suco natural e cookie de chocolate.</p> Descrição do combo em destaque. -->
-  </section>                                                                            <!--Linha 25: </section> Fecha a seção de destaque. -->
+  <div class="hero">
+    <h2>Energia para estudar, sabor para aproveitar!</h2>
+  </div>
 
-  <footer>                                                                              <!--Linha 27: <footer> Inicia o rodapé, com informações de copyright. -->
-    <p>&copy; 2025 Lanchonete Escolar. Todos os direitos reservados.</p>                 <!--Linha 28: <p>&copy; 2025 Lanchonete Escolar. Todos os direitos reservados.</p> Texto pequeno no rodapé. -->
-  </footer>                                                                                <!--Linha 29: </footer> Fecha o rodapé. -->
-</body>                                                                                     <!--Linha 30: </body> Encerra o conteúdo visível. -->
-</html>                                                                                   <!--Linha 31: </html> Fecha o documento HTML. -->
+  <section id="cardapio">
+    <h2>📋 Cardápio</h2>
+    <div class="cardapio">
+<div class="item"><a href="sanduiche.html">🥪 Sanduíche - R$8</a></div>
+<div class="item"><a href="pizza.html">🍕 Pizza Individual - R$12</a></div>
+<div class="item"><a href="suco.html">🥤 Suco Natural - R$5</a></div>
+<div class="item"><a href="brownie.html">🍫 Brownie - R$6</a></div>
+    </div>
+  </section>
+
+  <section id="promo">
+    <h2>🎁 Promoções da Semana</h2>
+    <div class="promo">
+      <h3>Combo Estudante</h3>
+      <p>Sanduíche + Suco por apenas <strong>R$10</strong>!</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>📞 Contato</h2>
+    <p>WhatsApp: (44) 99999-9999</p>
+    <p>Email: lanchonete@escola.com</p>
+  </section>
+
+  <section id="sobre">
+    <h2>👩‍🍳 Sobre Nós</h2>
+    <p>Somos a lanchonete da sua escola, feita para trazer sabor, energia e bons momentos entre amigos!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Lanchonete Escolar - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
